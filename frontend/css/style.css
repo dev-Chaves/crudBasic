@@ -1,0 +1,119 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+ }
+
+ body{
+    background-color: rgba(47,43,32,255);
+ }
+
+main {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.add-form{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 15px;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+}   
+
+button[type="submit"]{
+    background-color:rgba(47,43,32,255); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    height:  50px;
+    width: 50px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background-color 0.4s, transform 0.3s
+
+}
+button[type="submit"]:hover{
+    background-color: #241d0f;
+    transform: scale(1.05)
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,th {
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+
+}
+
+td {
+    color: #333;
+    font-weight: 800;
+}
+
+tr:nth-child(even){
+    background-color:#F5F5F5 ;
+}
+
+select{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #ebebeb;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: background-color 0.4s, transform 0.3s;
+
+}
+
+select:hover{
+    background-color: #bfbfbf;
+    transform: scale(1.05);
+}
+
+.btn-action {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    color: #fff;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-action:nth-child(1){
+    background-color: #a17317;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+.btn-action:nth-child(2){
+    background-color: #a12317;
+    margin-right: 6px;
+}

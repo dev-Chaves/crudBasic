@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--  -->
+    
+    <!-- Fonte  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--  -->
+        
+        
+    </head>
+    <body>
+
+    <main>
+        
+        <form class="add-form">
+            <input type="text" class="inputText" placeholder="Adicionar tarefa" id="inputText">
+            <button type="submit"> + </button>
+        </form>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th> Tarefa </th>
+                    <th> Criada Em </th>
+                    <th> Status </th>
+                    <th> Ações </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Título</td>
+                    <td>00 de Janeiro 2024 00:00</td>
+                    <td>Pendente</td>
+                    <td> 
+                        <Select>
+                            <option value="pendente">pendente</option>
+                            <option value="em andamento">em andamento</option>
+                            <option value="concluido">concluído</option>
+                        </Select>
+                    </td>
+
+                    <td>
+
+                        <button class="btn-action">
+                            <span>
+                                <span class="material-symbols-outlined">
+                                    delete
+                                    </span>
+                            </span>
+                        </button>
+
+                        <button class="btn-action">
+                            <span>
+                                <span class="material-symbols-outlined">
+                                    edit
+                                    </span>
+                            </span>
+                        </button>
+
+                    </td>        
+                </tr>
+            </tbody>
+
+
+        </table>
+
+    </main>
+
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
