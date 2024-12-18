@@ -49,9 +49,33 @@ npm run dev
 
 Endpoits em desenvolvimento !
 
-Endpoints da API
-GET/
-POST/
-DELETE/
-PUT/
+GET /todos: Retorna todas as tarefas.
+POST /todos: Cria uma nova tarefa. (Requer corpo com title e status)
+PUT /todos/:id: Atualiza uma tarefa existente. (Requer corpo com title e status)
+DELETE /todos/:id: Deleta uma tarefa.
 
+**EXEMPLO DE REQUISIÇÂO**
+
+**Criar uma tarefa ==>**
+POST/todos
+Content-Type: application/json
+
+{
+  "title": "Estudar Node.js",
+  "status": "Praticar criação de APIs com Node.js"
+}
+
+**Editar tarefa**
+PUT /todos/1
+Content-Type: application/json
+
+{
+  "title": "Estudar Node.js e Express",
+  "description": "Praticar criação de APIs com Node.js e Express"
+}
+
+**Deletar tarefa**
+DELETE /todos/1
+
+
+Esse `README.md` fornece as informações essenciais para entender e rodar esse mini projeto, com a explicação de como configurar o ambiente, usar a API.
